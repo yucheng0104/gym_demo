@@ -9,155 +9,287 @@
         body {
             /* background-color: #B2A59B; */
             background-color: #607274;
+            background-image: url(/img/pic-2.jpg);
+            background-size: contain;
             color: #FAEED1;
-
+            font-family: 'Times New Roman', Times, serif;
         }
 
-        h1 {
-            color: rgb(107, 197, 164);
+        .title {
             background-color: antiquewhite;
+            color: rgb(107, 197, 164);
+            font-size: 3rem;
+            text-align: center;
+            border-radius: 5px;
+            margin: 24px 4px 9px;
+            padding: 6px;
         }
 
-        h2 {
+        .eng-title {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .sub-title {
+            display: inline-block;
+            text-align: start;
             /* background-color: #607274; */
             background-color: #B2A59B;
             color: #FAEED1;
+            /* 1rem 16px */
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: black 2px solid;
+            padding-left: 12px;
+            border-radius: 4px;
+            margin: 12px 0;
         }
 
-        .div_1 {
-            background-color: #607274;
-            color: #FAEED1;
+        #info {
+            background-color: #4F6F52;
+            color: #D2E3C8;
+        }
+
+        .slogan {
+            background-color: rgb(60, 255, 0);
+            color: #e61414;
+            font-size: 20px;
+        }
+
+        #container {
+            padding: 1rem;
+        }
+
+        .image {
+            background-color: rgb(230, 224, 224);
+            padding: 12px;
+            width: 28%;
+        }
+
+        #photo {
+            text-align: center;
+            background-color: #6DA4AA;
+            border-radius: 2rem;
+            padding: 24px 0;
+        }
+
+        table {
+            width: 60%;
+            height: 300px;
+            margin: 0 auto;
+            border: 3px black solid;
+        }
+
+        thead {
+            background-color: #668a8e;
+            color: aliceblue;
+        }
+
+        tbody {
+            background-color: rgb(37, 232, 232);
+            color: rgb(81, 160, 163);
+        }
+
+        td:first-child {
+            background-color: #e61414;
+            color: azure;
+        }
+
+        td:nth-child(3) {
+            background-color: #e61414;
+            color: azure;
+        }
+
+        #video {
+            text-align: center;
+        }
+
+        #post-form {
+            text-align: center;
+        }
+
+        form {
+            width: 60%;
+            background-color: #E4DEBE;
+            background-image: url(/img/pic-1.jpg);
+            background-size: cover;
+            color: #607274;
+            padding: 1rem 0;
+            border-radius: 1rem;
+            margin: 6px auto;
+        }
+
+        input,
+        textarea,
+        label,
+        button {
+            margin: 12px 0;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: aqua;
+            width: 100px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+        a:active {
+            color: #ff1e00;
         }
     </style>
+
 </head>
 
 <body>
-    <h1>我愛健身網站</h1>
-    <div class="div_1">
-        <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，
-            通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
-            以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-        </b>
-        <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，
-            再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+    <div id="container">
+
+        <div class="title">我愛健身網站
+            <span class="eng-title">GYM WEB</span>
+        </div>
+        <div id="info">
+            <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，
+                通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
+                以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+            </b>
+            <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，
+                再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+            </p>
+            <em>
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
+                舞臺上或者是電影螢幕上綻放光彩。
+                <u class="slogan">答案就是堅持<b>運動健身!</b></u>
+            </em>
+        </div>
+        <hr>
+        <a target="_blank" href="https://www.16pic.com/pic/pic_8710805.html">
+            <img width="100%" style="padding: 6px; background-color:#D2E3C8 ;"
+                src="https://light.kaik.network/image/width=1920,quality=80/school/banner/cccd7a0c-80b6-4b68-97a3-19d6cb332929/b76aae03-378e-4f2e-a7e4-88a4ce7eef25.png@webp"
+                alt="找不到圖片">
+        </a>
+        <div class="sub-title">♠ 健身的10個好處</div>
+        <ol type="I">
+            <li>增加基礎代謝率</li>
+            <li>預防疾病和提高免疫力</li>
+            <li>改善心情</li>
+            <li>改善睡眠</li>
+            <li>增加自信</li>
+            <li>增強記憶力</li>
+            <li>增強心肺能力</li>
+            <li>提升睡眠品質</li>
+            <li>釋放工作的壓力</li>
+            <li>增加肌肉助於減肥</li>
+        </ol>
+        <hr>
+        <div id="photo">
+            <img class="image" src="/img/pic-1.jpg" alt="">
+            <img class="image" src="/img/pic-2.jpg" alt="">
+            <img class="image" src="/img/pic-3.jpg" alt="">
+        </div>
+        <div class="sub-title" class="sub_title">♥ 好文章連結</div class="sub-title">
+        <ul>
+            <li>
+                <a target="_blank"
+                    href="https://blog.worldgymtaiwan.com/common-symptoms-of-menopause">更年期症狀讓妳變得不快樂難相處嗎？調整飲食與運動是公認最佳良藥</a>
+            </li>
+            <li>
+                <a target="_blank"
+                    href="https://blog.worldgymtaiwan.com/training-can-help-protect-the-brain-from-degeneration">改善記憶力</a>
+            </li>
+            <li>
+                <a target="_blank"
+                    href="https://www.waldenu.edu/online-bachelors-programs/bs-in-psychology/resource/five-mental-benefits-of-exercise">5
+                    Mental Benefits of Exercise</a>
+            </li>
+        </ul>
+        <small>
+            引用網址：<a href="https://blog.worldgymtaiwan.com/">https://blog.worldgymtaiwan.com/</a>
+        </small>
+        <hr>
+        <div class="sub-title">♣ 一天所需的卡路里</div class="sub-title">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>每天活動量</th>
+                    <th>體重過輕者所需熱量</th>
+                    <th>體重正常者所需熱量</th>
+                    <th>體重過重、肥胖者所需熱量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>輕度工作</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                    <td>20~25大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>中度工作</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>重度工作</td>
+                    <td>45大卡 X 目前體重（公斤）</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <b>
+                <a href="bmi.html">計算BMI:</a>&nbsp;&nbsp;</b>
+            一位民眾身高160公分，體重65公斤，<u>BMI25.4kg/m2(=65÷1.6÷1.6)</u>，體重屬於「過重」。
+            <br>
+            <b>計算所需熱量:&nbsp;&nbsp;</b>
+            因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
         </p>
-        <em>
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
-            舞臺上或者是電影螢幕上綻放光彩。
-            <u style="background-color: rgb(60, 255, 0); color: #e61414;">答案就是堅持<b>運動健身!</b></u>
-        </em>
+        <div class="sub-title">♠ 健身影片</div class="sub-title">
+        <div id="video">
+            <iframe width="45%" height="500" src="https://www.youtube.com/embed/MzLZXUnekuI"
+                title="健身房新手【4天練全身課表】每天只做CP值最高的三個精華動作！│健人訓練│ 2021ep31" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <iframe width="45%" height="500" src="https://www.youtube.com/embed/LmrKejHOaG4"
+                title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!-- <video src="video/file_example_MP4_640_3MG.mp4" controls>
+                        </video> -->
+        <hr>
+        <div class="sub-title">表單填寫</div class="sub-title">
+
+        <div id="post-form">
+            <h3>需要更多資訊?免費索取健身資訊</h3>
+            前100名還贈送［我愛健身］書籍一本!
+            <br>
+            <form action="" method="GET">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="請輸入Email" required>
+                <br>
+                <label for="info">建議:</label><br>
+                <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                <p>
+                    <button type="submit">發送</button>
+                    <button type="reset" style="background-color: #e61414; color: white;">清除</button>
+                </p>
+            </form>
+        </div>
+
+
+
+
     </div>
-    <hr>
-    <a target="_blank" href="https://www.16pic.com/pic/pic_8710805.html">
-        <img width="100%"
-            src="https://light.kaik.network/image/width=1920,quality=80/school/banner/cccd7a0c-80b6-4b68-97a3-19d6cb332929/b76aae03-378e-4f2e-a7e4-88a4ce7eef25.png@webp"
-            alt="找不到圖片">
-    </a>
-    <h2>♠ 健身的10個好處</h2>
-    <ol type="I">
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li>改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-    </ol>
-    <hr>
-    <img width="31%" src="/img/pic-1.jpg" alt="">
-    <img width="31%" src="/img/pic-2.jpg" alt="">
-    <img width="31%" src="/img/pic-3.jpg" alt="">
-    <h2>♥ 好文章連結</h2>
-    <ul>
-        <li>
-            <a target="_blank"
-                href="https://blog.worldgymtaiwan.com/common-symptoms-of-menopause">更年期症狀讓妳變得不快樂難相處嗎？調整飲食與運動是公認最佳良藥</a>
-        </li>
-        <li>
-            <a target="_blank"
-                href="https://blog.worldgymtaiwan.com/training-can-help-protect-the-brain-from-degeneration">改善記憶力</a>
-        </li>
-        <li>
-            <a target="_blank"
-                href="https://www.waldenu.edu/online-bachelors-programs/bs-in-psychology/resource/five-mental-benefits-of-exercise">5
-                Mental Benefits of Exercise</a>
-        </li>
-    </ul>
-    <small>
-        引用網址：<a href="https://blog.worldgymtaiwan.com/">https://blog.worldgymtaiwan.com/</a>
-    </small>
-    <hr>
-    <h2>♣ 一天所需的卡路里</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>每天活動量</th>
-                <th>體重過輕者所需熱量</th>
-                <th>體重正常者所需熱量</th>
-                <th>體重過重、肥胖者所需熱量</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>輕度工作</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-                <td>20~25大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>中度工作</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>重度工作</td>
-                <td>45大卡 X 目前體重（公斤）</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-        <b>
-            <a href="bmi.html">計算BMI:</a>&nbsp;&nbsp;</b>
-        一位民眾身高160公分，體重65公斤，<u>BMI25.4kg/m2(=65÷1.6÷1.6)</u>，體重屬於「過重」。
-        <br>
-        <b>計算所需熱量:&nbsp;&nbsp;</b>
-        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
-    </p>
-    <h2>♠ 健身影片</h2>
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/MzLZXUnekuI"
-        title="健身房新手【4天練全身課表】每天只做CP值最高的三個精華動作！│健人訓練│ 2021ep31" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/LmrKejHOaG4"
-        title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <!-- <video src="video/file_example_MP4_640_3MG.mp4" controls>
-    </video> -->
-    <hr>
-    <h2>表單填寫</h2>
-
-    <h3>需要更多資訊?免費索取健身資訊</h3>
-    前100名還贈送［我愛健身］書籍一本!
-    <br>
-    <form action="" method="GET">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="請輸入Email" required>
-        <br>
-        <label for="info">建議:</label><br>
-        <textarea name="info" id="info" cols="30" rows="10"></textarea>
-        <p><button type="submit">發送</button></p>
-    </form>
-
-
-
-
 </body>
 
 </html>
